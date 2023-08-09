@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Audiowide', cursive;
+}
+h1::selection{
+    background: black;
+    color: #0096FF;
+}
+h3::selection{
+    background: black;
+    color: #0096FF;
+}
+h4::selection{
+    background: #0096FF;
+    color: black;
+}
+span::selection{
+    background: #0096FF;
+    color: black;
+}
+input::selection{
+    background: black;
+    color: #0096FF;
+}
+body {
+    height: 100vh;
+    background: whitesmoke;
+    overflow-x: hidden;
+}
+
+.title {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+.search {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+#ipAddress {
+    width: 35vw;
+    display: block;
+    margin: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 3.5rem;
+    color: #0096FF;
+}
+
+#ipAddress:focus {
+    border-bottom: solid 3px #0096FF;
+}
+
+#look {
+    width: 150px;
+    height: 50px;
+    background: #0096FF;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.7rem;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#look:hover {
+    background: black;
+}
+
+#look:active {
+    color: #0096FF;
+    box-shadow: 0px 0px 30px #0096FF;
+}
+
+#cont {
+    margin-top: 5vh;
+}
+
+#infos {
+    width: 80%;
+    margin-left: auto;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#infos>div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.info>h3 {
+    font-size: 1.2rem;
+}
+
+.info>h4 {
+    font-size: 1rem;
+    margin-left: 10px;
+    color: #0096FF;
+}
+
+a>span {
+    text-shadow: 0px 0px 2px blue;
+    transition: 200ms;
+}
+
+a>span:hover {
+    text-shadow: 0px 0px 1px cyan;
+    color: lime !important;
+}
+
+@media screen and (max-width: 1100px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 12px;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    #ipAddress {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 8px;
+        color: white
+    }
+
+    body {
+        background: rgb(19, 19, 19);
+    }
+
+    .search {
+        width: 90%;
+    }
+
+    #look {
+        width: 100px;
+        height: 50px;
+    }
+
+    a>span {
+        font-size: 28px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 6.5px;
+    }
+
+    .search {
+        width: 95%;
+        border: solid 2px #0096FF;
+    }
+    #ipAddress{
+        font-size: 3rem;
+    }
+    #ipAddress:focus {
+        border-bottom: none;
+    }
+
+    #infos {
+        width: 95%;
+        height: 444px;
+    }
+
+    #look {
+        width: 80px;
+        height: 35px;
+        border-radius: 0;
+    }
+
+    .info {
+        width: 95%;
+        margin: auto;
+    }
+
+    .info>h3 {
+        font-size: 1.7rem;
+    }
+
+    .info>h4 {
+        font-size: 1.5rem;
+    }
+}
